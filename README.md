@@ -1,6 +1,6 @@
 ## Descripción / Description  
-Este es un portfolio creado con HTML, CSS y Javascript.
-This is a portfolio created with HTML, CSS and Javascript.
+Este es un portfolio creado con HTML, CSS y Javascript.  
+This is a portfolio created with HTML, CSS and Javascript.  
 
 ## Autor / Author
 **Bautista Tobal**
