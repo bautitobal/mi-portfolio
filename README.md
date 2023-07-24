@@ -11,7 +11,7 @@ This is a portfolio created with HTML, CSS and Javascript.
 * [Portfolio web] (soon™)
 
 ## Ver el proyecto / See the project 
-- [githublink](githublink)
+- [Live page](https://bautitobal.github.io/mi-portfolio/)  
 
 ## Instalación / Installation
 Este proyecto no necesita instalación. Simplemente abre la carpeta o haz doble click en el .html una vez descargado el mismo.  
