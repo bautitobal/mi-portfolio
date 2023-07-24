@@ -650,19 +650,6 @@ html{
     width: 100%;
     display: block;
 }
-
-/* probando si anda o no, borrar las 2 lineas siguentes xdd si es que no anda */
-/* Estilos para los enlaces a las imágenes */
-.portfolio .galeria .proyecto a {
-    display: block;
-    text-decoration: none;
-}
-
-/* Cambiar cursor a pointer cuando el mouse pasa sobre las imágenes */
-.portfolio .galeria .proyecto img:hover {
-    cursor: pointer;
-}
-
 .portfolio .galeria .proyecto .overlay{
     position: absolute;
     top: 0;
