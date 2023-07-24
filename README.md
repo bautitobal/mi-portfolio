@@ -22,6 +22,6 @@ Si quieres contratarme puedes escribirme a bautitobal11@gmail.com para consultas
 If you want to hiring me you could mail me at bautitobal11@gmail.com for queries.  
 
 ## Licencia / License
-MIT Public License v3.0
+MIT Public License v3.0  
 No puede usarse comercialmente.  
 Cannot be used commercially.  
