@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- MENU DE ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Bauti Tobal</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- INICIO SECCIÓN -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/bt.png" alt="">
+            </div>
+            <h1>BAUTISTA TOBAL</h1>
+            <h2>Futuro Ingeniero en informática</h2>
+            <div class="redes">
+                <a href="https://twitter.com/bautitobal" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://linkedin.com/in/bautista-tobal-b25a4a237/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> 
+                <a href="https://be.net/bautitobal" target="_blank"><i class="fa-brands fa-square-behance"></i></a>
+                <a href="https://github.com/bautitobal" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MÍ SECCIÓN -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Buenas, soy Bautista Tobal.</span> Actualmente estoy estudiando la carrera de Ingeniería Informática en la UTN (Universidad Tecnológica Nacional).
+            Tengo conocimientos de Frontend, Python y Node JS. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quisquam adipisci veniam accusantium, esse quod eos fugiat? Pariatur rerum omnis quia iste explicabo, autem ipsam id possimus odio dolor officiis corporis.</p>
+            
+            <div class="fila">
+                <!-- DATOS PERSONALES -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            11-11-2004
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +54 9 11 5617-3311
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            bautitobal11@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.bautitobal.github.io
+                        </li>
+                        <li>
+                            <strong>¿De dónde soy?</strong>
+                            📍 Buenos Aires, Argentina
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE (Buscando trabajo)</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- INTERESES -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="intereses">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-headphones-simple"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-sharp fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-brands fa-windows"></i>
+                            <span>WINDOWS</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-regular fa-futbol"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOGRAFÍA</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>SEGURIDAD
+                            INFORMÁTICA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-file-arrow-down"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SKILLS SECCIÓN -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>47%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>NodeJS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>47%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQLite</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>20% (Learning)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Sony Vegas Pro</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>FL Studio</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>Learning%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Kali Linux</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30% (Learning)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Soft Skills -->
+                <div class="col">
+                    <h3>Soft Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adaptabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>54%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>68%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Organización y gestión de tiempo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Liderazgo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resiliencia</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Empatía</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Orientación al cliente</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Gestión de proyectos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Persuasión</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Detallista</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Comunicación digital</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Autodidaxia</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Multitasking</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Colaboración remota</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Pensamiento analítico</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CURRÍCULUM SECCIÓN -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Currículum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Bachiller en economía y administración</h4>
+                        <span class="casa">Colegio Parroquial Juan XXIII</span>
+                        <span class="fecha">2017 - 2022</span>
+                        <p>Los primeros 3 años en dicho colegio cursé el bachiller industrial, ahí es donde aprendí los lenguajes de programación tales como Visual Basic y HTML.
+                        También aprendí a utilizar el Framework de Microsoft Visual Studio o también conocido como Visual Basic.
+                        Luego, elegí el bachiller de Economía, el cual me recibí en 2022. En el último año hicimos un emprendimiento con mis compañeros y creamos una empresa llamada
+                        Dentalis, la cuál vendimos pastillas dentífricas. Esta compañía gano varios galardones, uno de ellos fué quedar como segunda mejor empresa en la compañía del año
+                        en guatemala 2022 (Company of the Year 2022). Para más información visita <a href="https://aprenderaemprender.org.ar/dentalis" target="_blank">este sitio</a>.</p><br>
+                        <div class="conectori">
+                            <div class="curriculumi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bachiller en economía y administración</h4>
+                        <span class="casa">Colegio Parroquial Juan XXIII</span>
+                        <span class="fecha">2017 - 2022</span>
+                        <p>Los primeros 3 años en dicho colegio cursé el bachiller industrial, ahí es donde aprendí los lenguajes de programación tales como Visual Basic y HTML.
+                        También aprendí a utilizar el Framework de Microsoft Visual Studio o también conocido como Visual Basic.
+                        Luego, elegí el bachiller de Economía, el cual me recibí en 2022. En el último año hicimos un emprendimiento con mis compañeros y creamos una empresa llamada
+                        Dentalis, la cuál vendimos pastillas dentífricas. Esta compañía gano varios galardones, uno de ellos fué quedar como segunda mejor empresa en la compañía del año
+                        en guatemala 2022 (Company of the Year 2022). Para más información visita <a href="https://aprenderaemprender.org.ar/dentalis" target="_blank">este sitio</a>.</p>
+                        <div class="conectori">
+                            <div class="curriculumi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia laboral</h3>
+                    <div class="item der">
+                        <h4>Gerente de ventas</h4>
+                        <span class="casa">Dentalis</span>
+                        <span class="fecha">Abril 2022 - Diciembre 2022</span>
+                        <p>Como gerente de ventas en Dentalis, tuve la oportunidad de liderar y gestionar un equipo de profesionales enfocados en promover nuestros productos y servicios en el mercado odontológico. Mi enfoque principal fue el desarrollo de estrategias efectivas para impulsar el crecimiento de las ventas y fortalecer la presencia de la empresa en el sector.</p>
+
+                        <p>Durante mi gestión, implementé diversas iniciativas que resultaron en un notable incremento en los ingresos y en el alcance de nuestros productos a nivel regional, nacional e incluso internacional. Algunas de las acciones clave que llevé a cabo fueron:</p><br>
+
+                        <ul>
+                            <li>Estrategia de ventas: Diseñé y ejecuté una estrategia de ventas integral que se alineaba con los objetivos comerciales de la empresa. Esto incluyó la identificación de mercados potenciales, análisis de la competencia y desarrollo de planes de acción para alcanzar cuotas de ventas ambiciosas.</li><br>
+                            <li>Desarrollo de equipo: Me enfoqué en la formación y capacitación de los miembros del equipo de ventas para mejorar sus habilidades y conocimientos. Implementé programas de entrenamiento que abarcaban desde técnicas de venta hasta conocimientos técnicos sobre los productos para asegurar un equipo altamente calificado y motivado.</li><br>
+                            <li>Fidelización de clientes: Implementé estrategias para fortalecer las relaciones con los clientes existentes y generar lealtad hacia nuestra marca. Esto incluyó la mejora de los servicios postventa y el seguimiento personalizado para garantizar la satisfacción del cliente.</li><br>
+                            <li>Análisis de datos: Utilicé herramientas de análisis para evaluar el rendimiento del equipo de ventas y el impacto de nuestras estrategias. Mediante el análisis de datos, identifiqué oportunidades de mejora y ajusté nuestras tácticas en función de los resultados obtenidos.</li><br>
+                            <li>Participación en eventos y ferias: Asistí y representé a Dentalis en eventos y ferias del sector odontológico para promover nuestros productos, generar contactos comerciales y aumentar la visibilidad de la empresa.</li><br>
+                            <li>Colaboración interdepartamental: Trabajé en estrecha colaboración con los equipos de marketing, producción y logística para asegurar una coordinación efectiva en la implementación de estrategias y el cumplimiento de objetivos.</li><br>
+                            <li>Identificación de nuevas oportunidades de negocio: Realicé un análisis de mercado continuo para identificar tendencias emergentes, necesidades no cubiertas y oportunidades de expansión para la empresa.</li><br>
+                        </ul>
+                        <p>En general, mi rol como gerente de ventas en Dentalis fue fundamental para impulsar el éxito y el crecimiento de la empresa en el mercado odontológico. Mediante una combinación de liderazgo efectivo, estrategias bien planificadas y un enfoque centrado en el cliente, logramos consolidar la posición de Dentalis como un referente destacado en la industria.</p>
+                        <div class="conectord"></div>
+                            <div class="curriculumd"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- PORTFOLIO SECCIÓN -->
+<section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                        <img src="/img/p1.jpg" alt="" >               
+                        <div class="overlay">
+                        <h3>Password Generator v1.0</h3>
+                        <p>used Python</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Inserte laburo (son ejemplos)</h3>
+                        <p>Fotografía 800x600</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Inserte laburo (son ejemplos)</h3>
+                        <p>Fotografía 800x600</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Inserte laburo (son ejemplos)</h3>
+                        <p>Fotografía 800x600</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Inserte laburo (son ejemplos)</h3>
+                        <p>Fotografía 800x600</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Inserte laburo (son ejemplos)</h3>
+                        <p>Fotografía 800x600</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->    
+                <div class="col">
+                    <form action="https://formsubmit.co/bautitobal11@gmail.com" method="POST" data-formsubmit-cc="bautitobal11@gmail.com">    
+                        <input type="text" name="name" placeholder="Nombre y apellido">
+                        <input type="phone" name="phone" placeholder="Número telefónico">
+                        <input type="email" name="email" placeholder="Dirección de correo electrónico">
+                        <input type="text" name="subject" placeholder="Asunto">
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                            <button>
+                            Enviar mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form> 
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Ramos Mejía, Provincia de Buenos Aires, Argentina
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +54 9 11 5617-3311
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                E-mail: bautitobal11@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://twitter.com/bautitobal" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://linkedin.com/in/bautista-tobal-b25a4a237/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> 
+            <a href="https://be.net/bautitobal" target="_blank"><i class="fa-brands fa-square-behance"></i></a>
+            <a href="https://github.com/bautitobal" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
