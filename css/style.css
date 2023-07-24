@@ -58,7 +58,7 @@ html{
 /* SECCIÓN INICIO */
 .inicio{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-    url('https://bautitobal.github.io/mi-portfolio/mi-portfolio/img/fondo.jpg');
+    url('../img/fondo.jpg');
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -691,7 +691,7 @@ html{
 /* SECCIÓN CONTACTO */
 .contacto{
     opacity: 1;
-    background-image: url(/img/contact_bg.png);
+    background-image: url(../img/contact_bg.png);
     background-color: #1e2326;
     background-size: cover;
     background-repeat: no-repeat;
