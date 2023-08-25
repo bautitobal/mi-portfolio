@@ -551,7 +551,7 @@ html{
 /* SECCIÓN CONTACTO */
 .contacto{
     opacity: 1;
-    background-image: url(/img/contact_bg.png);
+    background-image: url(../img/contact_bg.png);
     background-color: #1e2326;
     background-size: cover;
     background-repeat: no-repeat;
