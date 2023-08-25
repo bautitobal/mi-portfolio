@@ -58,7 +58,7 @@ html{
 /* SECCIÓN INICIO */
 .inicio{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-    url('../img/fondo.jpg');
+    url("../img/fondo.jpg");
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -125,7 +125,10 @@ html{
     font: 18px;
     line-height: 22px;
     margin-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 15px;
 }
+
 .sobremi .contenido-seccion p span{
     color: #1cb698;
     font-weight: bold;
@@ -281,7 +284,7 @@ html{
 }
 @keyframes css {
     0%{width: 0%;}
-    100%{width: 60%;}
+    100%{width: 70%;}
 }
 .skills .skill .javascript{
     width: 0%;
@@ -289,7 +292,7 @@ html{
 }
 @keyframes javascript {
     0%{width: 0%;}
-    100%{width: 47%;}
+    100%{width: 40%;}
 }
 .skills .skill .python{
     width: 0%;
@@ -305,7 +308,7 @@ html{
 }
 @keyframes nodejs {
     0%{width: 0%;}
-    100%{width: 47%;}
+    100%{width: 20%;}
 }
 .skills .skill .sqlite{
     width: 0%;
@@ -323,38 +326,6 @@ html{
     0%{width: 0%;}
     100%{width: 75%;}
 }
-.skills .skill .sonyvegaspro{
-    width: 0%;
-    animation: 2s sonyvegaspro forwards;
-}
-@keyframes sonyvegaspro {
-    0%{width: 0%;}
-    100%{width: 50%;}
-}
-.skills .skill .flstudio{
-    width: 0%;
-    animation: 2s flstudio forwards;
-}
-@keyframes flstudio {
-    0%{width: 0%;}
-    100%{width: 85%;}
-}
-.skills .skill .wordpress{
-    width: 0%;
-    animation: 2s wordpress forwards;
-}
-@keyframes wordpress {
-    0%{width: 0%;}
-    100%{width: 10%;}
-}
-.skills .skill .kalilinux{
-    width: 0%;
-    animation: 2s kalilinux forwards;
-}
-@keyframes kalilinux {
-    0%{width: 0%;}
-    100%{width: 30%;}
-}
 .skills .skill .comunicacion{
     width: 0%;
     animation: 2s comunicacion forwards;
@@ -369,7 +340,7 @@ html{
 }
 @keyframes trabajo {
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 60%;}
 }
 .skills .skill .creatividad{
     width: 0%;
@@ -385,7 +356,7 @@ html{
 }
 @keyframes adaptabilidad {
     0%{width: 0%;}
-    100%{width: 54%;}
+    100%{width: 55%;}
 }
 .skills .skill .resolucion{
     width: 0%;
@@ -393,7 +364,7 @@ html{
 }
 @keyframes resolucion {
     0%{width: 0%;}
-    100%{width: 68%;}
+    100%{width: 60%;}
 }
 .skills .skill .organizacion{
     width: 0%;
@@ -403,38 +374,6 @@ html{
     0%{width: 0%;}
     100%{width: 55%;}
 }
-.skills .skill .liderazgo{
-    width: 0%;
-    animation: 2s liderazgo forwards;
-}
-@keyframes liderazgo {
-    0%{width: 0%;}
-    100%{width: 50%;}
-}
-.skills .skill .resiliencia{
-    width: 0%;
-    animation: 2s resiliencia forwards;
-}
-@keyframes resiliencia {
-    0%{width: 0%;}
-    100%{width: 60%;}
-}
-.skills .skill .empatia{
-    width: 0%;
-    animation: 2s empatia forwards;
-}
-@keyframes empatia {
-    0%{width: 0%;}
-    100%{width: 90%;}
-}
-.skills .skill .orientacion{
-    width: 0%;
-    animation: 2s orientacion forwards;
-}
-@keyframes orientacion {
-    0%{width: 0%;}
-    100%{width: 100%;}
-}
 .skills .skill .dedicacion{
     width: 0%;
     animation: 2s dedicacion forwards;
@@ -442,70 +381,6 @@ html{
 @keyframes dedicacion {
     0%{width: 0%;}
     100%{width: 70%;}
-}
-.skills .skill .gestion{
-    width: 0%;
-    animation: 2s gestion forwards;
-}
-@keyframes gestion {
-    0%{width: 0%;}
-    100%{width: 60%;}
-}
-.skills .skill .persuasion{
-    width: 0%;
-    animation: 2s persuasion forwards;
-}
-@keyframes persuasion {
-    0%{width: 0%;}
-    100%{width: 40%;}
-}
-.skills .skill .detallista{
-    width: 0%;
-    animation: 2s detallista forwards;
-}
-@keyframes detallista {
-    0%{width: 0%;}
-    100%{width: 95%;}
-}
-.skills .skill .comunicaciondigital{
-    width: 0%;
-    animation: 2s comunicaciondigital forwards;
-}
-@keyframes comunicaciondigital {
-    0%{width: 0%;}
-    100%{width: 40%;}
-}
-.skills .skill .autodidaxia{
-    width: 0%;
-    animation: 2s autodidaxia forwards;
-}
-@keyframes autodidaxia {
-    0%{width: 0%;}
-    100%{width: 80%;}
-}
-.skills .skill .multitasking{
-    width: 0%;
-    animation: 2s multitasking forwards;
-}
-@keyframes multitasking {
-    0%{width: 0%;}
-    100%{width: 85%;}
-}
-.skills .skill .colaboracion{
-    width: 0%;
-    animation: 2s colaboracion forwards;
-}
-@keyframes colaboracion {
-    0%{width: 0%;}
-    100%{width: 55%;}
-}
-.skills .skill .pensamiento{
-    width: 0%;
-    animation: 2s pensamiento forwards;
-}
-@keyframes pensamiento {
-    0%{width: 0%;}
-    100%{width: 40%;}
 }
 /* SECCIÓN CURRÍCULUM */
 .curriculum{
@@ -644,8 +519,6 @@ html{
     margin: 10px;
     cursor: pointer;
 }
-
-
 .portfolio .galeria .proyecto img{
     width: 100%;
     display: block;
@@ -678,7 +551,7 @@ html{
 /* SECCIÓN CONTACTO */
 .contacto{
     opacity: 1;
-    background-image: url(../img/contact_bg.png);
+    background-image: url(/img/contact_bg.png);
     background-color: #1e2326;
     background-size: cover;
     background-repeat: no-repeat;
@@ -687,6 +560,10 @@ html{
     display: flex;
     align-items: center;
     padding: 50px 0;
+}
+.contacto img {
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
 }
 .contacto .contenido-seccion{
     max-width: 1100px;
@@ -717,6 +594,7 @@ html{
     font-size: 18px;
     resize: none;
     outline: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
 }
 .contacto button{
     cursor: pointer;
@@ -730,6 +608,7 @@ html{
     color: #fff;
     position: relative;
     z-index: 10;
+    
 }
 .contacto button .overlay{
     position: absolute;
@@ -876,4 +755,31 @@ footer .arriba{
     .contacto .fila .col{
         width: 100%;
     }
+}
+
+/* Extra */
+.fa-envelope a {
+    text-decoration: none;
+}
+
+.website-host {
+    text-decoration: none;
+    color: #1cb698;
+    font-weight: bold;
+}
+
+.datos-mail {
+    text-decoration: none;
+    color: #1cb698;
+    font-weight: bold;
+}
+
+.contacto-mail {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contacto-whatsapp {
+    text-decoration: none;
+    color: #1cb698;
 }
