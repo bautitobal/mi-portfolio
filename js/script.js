@@ -28,29 +28,13 @@ function efectoSkills(){
         skills[4].classList.add("nodejs");
         skills[5].classList.add("sqlite");
         skills[6].classList.add("photoshop");
-        skills[7].classList.add("sonyvegaspro");
-        skills[8].classList.add("flstudio");
-        skills[9].classList.add("wordpress");
-        skills[10].classList.add("kalilinux");
-        skills[11].classList.add("comunicacion");
-        skills[12].classList.add("trabajo");
-        skills[13].classList.add("creatividad");
-        skills[14].classList.add("adaptabilidad");
-        skills[15].classList.add("resolucion");
-        skills[16].classList.add("organizacion");
-        skills[17].classList.add("liderazgo");
-        skills[18].classList.add("resiliencia");
-        skills[19].classList.add("empatia");
-        skills[20].classList.add("orientacion");
-        skills[21].classList.add("dedicacion");
-        skills[22].classList.add("gestion");
-        skills[23].classList.add("persuasion");
-        skills[24].classList.add("detallista");
-        skills[25].classList.add("comunicaciondigital");
-        skills[26].classList.add("autodidaxia");
-        skills[27].classList.add("multitasking");
-        skills[28].classList.add("colaboracion");
-        skills[29].classList.add("pensamiento");
+        skills[7].classList.add("comunicacion");
+        skills[8].classList.add("trabajo");
+        skills[9].classList.add("creatividad");
+        skills[10].classList.add("adaptabilidad");
+        skills[11].classList.add("resolucion");
+        skills[12].classList.add("organizacion");
+        skills[13].classList.add("dedicacion");
     }
 }
 
@@ -59,3 +43,40 @@ function efectoSkills(){
 window.onscroll = function(){
     efectoSkills();
 }
+
+// Limitación de solicitudes de contacto
+function checkSubmissionLimit() {
+    let maxSubmissions = 5; // Número máximo de envíos permitidos
+    let submissionTimeFrame = 3600000; // 1 hora en milisegundos
+    let lastSubmission = localStorage.getItem('lastSubmission');
+    
+    if (!lastSubmission) {
+        localStorage.setItem('lastSubmission', Date.now());
+    } else {
+        let currentTime = Date.now();
+        let timeSinceLastSubmission = currentTime - parseInt(lastSubmission);
+        
+        if (timeSinceLastSubmission < submissionTimeFrame) {
+            let submissions = parseInt(localStorage.getItem('submissions')) || 0;
+            submissions++;
+            
+            if (submissions > maxSubmissions) {
+                alert("Has alcanzado el límite máximo de envíos. Inténtalo más tarde.");
+                return false;
+            }
+            
+            localStorage.setItem('submissions', submissions);
+        } else {
+            localStorage.removeItem('submissions');
+            localStorage.setItem('lastSubmission', currentTime);
+        }
+    }
+    
+    return true;
+}
+
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    if (!checkSubmissionLimit()) {
+        event.preventDefault(); // Detener el envío del formulario si se supera el límite de envíos
+    }
+});
